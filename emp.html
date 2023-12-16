@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Data</h1>
+    <label for="id">Enter your id</label>
+    <input type="text" id="id"><br>
+
+    <label for="name">Enter your name</label>
+    <input type="text" id="name"><br>
+
+    <label for="salary">Enter your salary</label>
+    <input type="text" id="salary"><br>
+
+    <input type="button" value="submit" onclick="createobject()">
+</body>
+
+<script>
+    function createobject(){
+        emp= new Object();
+        emp.id = document.getElementById("id").value;
+        emp.ename = document.getElementById("name").value;
+        emp.salary = document.getElementById("salary").value;
+
+        document.write(emp.id+ " "+emp.ename+" "+emp.salary)
+    }
+</script>

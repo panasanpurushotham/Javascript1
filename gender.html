@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Male:<input type="radio" name="gender" value="male"><br>
+
+        Female:<input type="radio" name="gender" value="female"><br>
+
+        Others:<input type="radio" name="gender" value="others"><br>
+
+        <input type="button" value="print" onclick="getGenderCount()">
+    </form>
+
+    <script>
+        function getGenderCount(){
+            var total = document.getElementsByName("gender");
+            alert("Total genders are: "+total.length);
+
+            for(var i=0; i<total.length; i++){
+                if(total[i].checked){
+                    alert(total[i].value);
+                    break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

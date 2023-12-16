@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First JS</title>
+</head>
+<body>
+    <script>
+        var date= new Date();
+        // alert("Todays date is"+date);
+
+        var n= date.getDay();
+        document.write("Todays day is: "+date.getDay()+"<br>");
+
+        // var n1= date.getHours();
+        document.write(date.getHours());
+
+
+        function m1(){
+            alert("Hello")
+        }
+
+
+
+        function add(){
+            var a=10;
+            var b=20;
+            var c=a+b;
+            document.write("addition "+c)
+        }
+        function sub(){
+            var a=10;
+            var b=20;
+            var c=a-b;
+            document.write("subtract "+c)
+        }
+        function mul(){
+            var a=10;
+            var b=20;
+            var c=a*b;
+            document.write("multiply "+c)
+        }
+        function div(){
+            var a=10;
+            var b=20;
+            var c=a/b;
+            document.write("divide "+c)
+        }
+
+
+    </script>
+
+    <input type="button" onclick="m1()" value="submit"><br><br>
+
+    <input type="button" onclick="add()" value="Add">
+    <input type="button" onclick="sub()" value="sub">
+    <input type="button" onclick="mul()" value="mul">
+    <input type="button" onclick="div()" value="div">
+
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function m1(){
+        // alert("m1 function")
+        // }
+
+
+
+
+    </script>   
+    
+    <form>
+        <!-- <input type="button" onclick="m1()" value="submit">
+        <input type="button" onclick="m2()" value="submit2"> -->
+
+        <input type="button" onclick="add()" value="add"><br>
+        <input type="button"  onclick="sub()" value="sub">
+        <input type="button"  onclick="mul()" value="mul">
+        <input type="button"  onclick="div()" value="div">
+
+
+    </form>
+
+
+
+    <script>
+        function add(){
+            var a=10;
+            var b=5;
+            var c=a+b;
+            document.write("Addition of a and b "+c)
+        }
+        function sub(){
+            var a=10;
+            var b=5;
+            var c=a-b;
+            document.write("subtraction of a and b "+c)
+        }
+        function mul(){
+            var a=10;
+            var b=5;
+            var c=a*b;
+            document.write("multiplication of a and b "+c)
+        }
+        function div(){
+            var a=10;
+            var b=5;
+            var c=a/b;
+            document.write("division of a and b "+c)
+        }
+
+        var age=50;
+        if(age<13){
+            document.write("He is kid")
+        }
+        else if(age>=13 && age<18){
+            document.write("he is teen")
+        }
+        else if(age>=18 && age<30){
+            document.write("he is young")
+        }
+        else if(age>=30 && age<50){
+            document.write("he is mid")
+        }
+        else{
+            document.write("he is senior citizen <br>")
+        }
+        
+        
+
+
+
+        var grade='40';
+        switch(true){
+            case grade>=80: document.write("Congratulations you got A grade")
+            break;
+
+            case grade>=70: document.write("Congratulations you got B grade")
+            break;
+
+            case grade>=60: document.write("Practice well!! you got C grade")
+            break;
+
+            case grade>=50: document.write("Work hard!! you got D grade")
+            break;
+
+            case grade<40: document.write("sorry you are failed <br>")
+            break;
+
+            default: document.write("wrong choice")
+
+
+        }
+    </script>
+
+</body>
+</html>

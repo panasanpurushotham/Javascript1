@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var n= date.getDay();
+        
+        // var n1= date.getHours();
+        alert("Today is:"+date.getHours())
+        
+        switch(n){
+            case 0: document.write("Its Sunday!<br>");
+            break;
+
+            case 1: document.write("Its Monday!<br>");
+            break;
+
+            case 2: document.write("Its Tuesday!<br>");
+            break;
+
+            case 3: document.write("Its Wednesday!<br>");
+            break;
+
+            case 4: document.write("Its Thursday!<br>");
+            break;
+
+            case 5: document.write("Its Friday!<br>");
+            break;
+
+            case 6: document.write("Its Saturday!<br>");
+            break;
+
+            default: document.write('Wrong Choice! <br>')
+        }
+    </script>
+</body>
+</html>

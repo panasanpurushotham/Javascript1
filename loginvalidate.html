@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loginvalidate</title>
+</head>
+<body>
+    <h2>Login form</h2>
+    <form >
+        <label for="email">Email:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass"><br><br>
+
+        <input type="button" value="Login" onclick="validate()">
+
+    </form>
+    
+</body>
+
+<script>
+    function validate(){
+        var email=document.getElementById("email").value;
+        var pass=document.getElementById("pass").value;
+        var dot= email.indexOf(".");
+        var at= email.indexOf("@");
+
+        if(email=="" || pass==""){
+            alert("Email or password cannot be empty")
+        }
+        else if(email.length<6 || pass.length<6){
+            alert("Email or password cannot be less than 6 characters ")
+        }
+        
+        else if(dot<=at+2 || at<1 || dot+2>email.length){
+            alert("Please enter valid mail id")
+        }
+        else{
+            window.open("date.html")
+        }
+
+
+    }
+</script>
+
+</html>

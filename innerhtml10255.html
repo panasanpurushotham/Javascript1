@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerHTml</title>
+</head>
+
+<body>
+    <table border="2">
+        <tr>
+            <td id="test"></td>
+            <td id="test1"></td>
+        </tr>
+    </table>
+
+    <form>
+        <input type="button" value="comment" onclick="showForm()">
+        <div id="myLocation"></div>
+
+    </form>
+
+    <script>
+        var data = 100;
+        var data1 = 200;
+        document.getElementById("test").innerHTML = data;
+        document.getElementById("test1").innerHTML = data1;
+
+
+
+        function showForm() {
+            var data = "<br> Name:<br> <input type='text' name='name'><br> Comment:<br><input type='text'> ";
+            document.getElementById('myLocation').innerHTML=data;
+        }
+
+
+
+
+
+    </script>
+</body>
+
+</html>

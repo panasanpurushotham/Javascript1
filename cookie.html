@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="setcookies" onclick="setCookies()">
+    <input type="button" value="getcookies" onclick="getCookies()">
+
+    <script>
+        function setCookies(){
+            document.cookie="username=purushotham";
+            document.cookie="password=panasa";
+        }
+
+        function getCookies(){
+            if(document.cookie.length!=0){
+                alert(document.cookie)
+            }
+            else{
+                alert("cookies not available")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        var date =new Date();
+
+        var n=date.getDay();
+        document.write("Day is: "+date.getDay()+ "<br>")
+        switch(n){
+            case 0: document.write("Its Sunday  <br>")
+            break;
+
+            case 1: document.write("Its Monday  <br>")
+            break;
+
+            case 2: document.write("Its Tuesday  <br>")
+            break;
+
+            case 3: document.write("Its Wednesday  <br>")
+            break;
+
+            default: document.write("Wrong choice!!  <br>")
+
+
+        }
+
+
+        var n1=date.getHours();
+        document.write("Time is: "+date.getHours()+ "<br>")
+
+        switch(true){
+            case n1<= 11: document.write("Good Morning!!  <br>")
+            break;
+
+            case n1<= 14: document.write("Good Afternoon!!  <br>")
+            break;
+
+            case n1<= 19: document.write("Good Evening!!  <br>")
+            break;
+
+            case n1<= 23: document.write("Good night!!  <br>")
+            break;
+
+            default: document.write("Wrong choice!!  <br>")
+
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>

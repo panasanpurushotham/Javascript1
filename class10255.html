@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class</title>
+</head>
+<body>
+    <script>
+        class Employee{
+            add(n1,n2){
+                document.write("Addition "+(n1+n2)+"<br>");
+            }
+        }
+        var e1 = new Employee();
+        e1.add(12,12);
+        e1.add(50,12);
+
+
+        class Employee1{
+            constructor(eid,ename){
+                this.id=eid;
+                this.name=ename;
+            }
+            putData(){
+                document.write(this.id+" "+this.name);
+            }
+        }
+
+        var e1= new Employee1(101,"Yash"+"<br>");
+        var e2= new Employee1(102,"Mahesh"+"<br>");
+        e1.putData();
+        e2.putData();
+    </script>
+</body>
+</html>
